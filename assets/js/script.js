@@ -1,20 +1,28 @@
 
-$(document).ready(function(){
-    $("h1.color1").click(function(){
-        $(this).css("color", "red");
+document.addEventListener("DOMContentLoaded", function() {
+    var color1Elements = document.querySelectorAll('h1.color1');
+    var color2Elements = document.querySelectorAll('p.color2');
+
+    color1Elements.forEach(function(element) {
+        element.addEventListener('click', function() {
+            this.style.color = 'blue';
+        });
+
+        element.addEventListener('dblclick', function() {
+            this.style.color = 'black';
+        });
     });
 
-    $("p.color2").click(function(){
-        $(this).css("color", "green");
-    });
+    color2Elements.forEach(function(element) {
+        element.addEventListener('click', function() {
+            this.style.color = 'tomato';
+        });
 
-    $("h1.color1").dblclick(function(){
-        $(this).css("color", "black");
-    });
-
-    $("p.color2").dblclick(function(){
-        $(this).css("color", "black");
+        element.addEventListener('dblclick', function() {
+            this.style.color = 'black';
+        });
     });
 });
+
 
 
