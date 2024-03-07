@@ -2,3 +2,11 @@
     padding-top: 100px;
     text-align: center;
 }
+
+.color1 {
+    cursor: pointer; /* Cambia el cursor a una mano cuando el mouse esté sobre elementos con la clase color1 */
+}
+
+.color2 {
+    cursor: pointer; /* Cambia el cursor a una mano cuando el mouse esté sobre elementos con la clase color2 */
+}
